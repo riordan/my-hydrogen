@@ -1,0 +1,10 @@
+version: '2'
+services:
+  hydro:
+    build: .
+    entrypoint: [/tini, --]
+    command: [jupyter-notebook, --allow-root, --no-browser, --port=8888]
+    ports:
+      - 8855:8888
+    environment:
+      - JUPYTER_TOKEN=$JUPYTER_TOKEN
