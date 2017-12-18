@@ -1,6 +1,9 @@
 # my-hydrogen
 Personal configuration to use a consistent Hydrogen -> Atom environment with a Docker container
 
+# Known Issues
+Only works with Python3 kernels; not yet able to use kernels for Julia, R, Javascript.
+
 # Instructions
 1. Install Atom `$ brew cask install atom`
 1. Install hydrogen `$ apm install hydrogen`
@@ -22,7 +25,5 @@ Personal configuration to use a consistent Hydrogen -> Atom environment with a D
 
 To shut down, after the session's over, you can just destroy the kernel by switching to this folder and running `$ docker-compose down` or stop it by `$ docker-compose stop`.
 
-
-
 # Background
-This is just a Dockerfile for use with [Hydrogen's Remote Kernels](https://nteract.gitbooks.io/hydrogen/docs/Usage/RemoteKernelConnection.html) featue.
+This is just a Dockerfile for use with [Hydrogen's Remote Kernels](https://nteract.gitbooks.io/hydrogen/docs/Usage/RemoteKernelConnection.html) feature.
